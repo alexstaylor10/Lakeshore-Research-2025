@@ -1,0 +1,929 @@
+<!-- Showcase of photos from Lakeshore 2025 Research Program -->
+<!-- Author: Alex Taylor -->
+<!-- Date: July 18th, 2025 -->
+
+<!DOCTYPE html>
+
+<!-- Note from Alex: Hello! I know this was written poorly, I had a midterm coming up so I just programmed with the goal of
+basic functionality rather than efficiency. I hope it's not too hard to follow, best of luck :) -->
+<html lang="en">
+    <head>
+        <!-- Author of page -->
+        <meta name="author" content="Alex Taylor">
+
+        <!-- Allow emojis and mobile device use -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <!-- http://getbootstrap.com/docs/5.3/ -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- Link to css -->
+        <link href="static/styles.css" rel="stylesheet">
+
+        <!-- Set title for tab -->
+        <title>Lakeshore Research Photos</title>
+    </head>
+
+    <body class="main">
+        <!-- Grid to display carousels -->
+        <div class="container mt-4">
+            
+            <!-- First six carousels -->
+            <div class="row">               
+               
+                <!-- Photos of Big Bluestem -->
+                <div class="col-md-4">
+                    <h3 class="text-center mb-3">Big Bluestem</h3>
+                    <div id="bluestem" class="carousel slide photos">   
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="static/field/BB1.jpg" class="d-block w-100" alt="BB1">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB1</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB2.jpg" class="d-block w-100" alt="BB2">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB2</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB3.jpg" class="d-block w-100" alt="BB3">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB3</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB4.jpg" class="d-block w-100" alt="BB4">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB4</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB5.jpg" class="d-block w-100" alt="BB5">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB5</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB6.jpg" class="d-block w-100" alt="BB6">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB6</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB7.jpg" class="d-block w-100" alt="BB7">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB7</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB8.jpg" class="d-block w-100" alt="BB8">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB8</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB9.jpg" class="d-block w-100" alt="BB9">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB9</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB10.jpg" class="d-block w-100" alt="BB10">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB10</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB1_Bunch.jpg" class="d-block w-100" alt="BB1 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of BB1</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB2_Bunch.jpg" class="d-block w-100" alt="BB2 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of BB2</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB3_Bunch.jpg" class="d-block w-100" alt="BB3 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of BB3</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB4_Bunch.jpg" class="d-block w-100" alt="BB4 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of BB4</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB5_Bunch.jpg" class="d-block w-100" alt="BB5 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of BB5</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB6_Bunch.jpg" class="d-block w-100" alt="BB6 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of BB6</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB7_Bunch.jpg" class="d-block w-100" alt="BB7 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of BB7</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB8_Bunch.jpg" class="d-block w-100" alt="BB8 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of BB8</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB9_Bunch.jpg" class="d-block w-100" alt="BB9 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of BB9</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/BB10_Bunch.jpg" class="d-block w-100" alt="BB10 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of BB10</p>
+                            </div>
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#bluestem" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#bluestem" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Photos of Switchgrass -->
+                <div class="col-md-4">
+                    <h3 class="text-center mb-3">Switchgrass</h3>
+                    <div id="switchgrass" class="carousel slide photos">   
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="static/field/SG1.jpg" class="d-block w-100" alt="SG1">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG1</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG2.jpg" class="d-block w-100" alt="SG2">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG2</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG3.jpg" class="d-block w-100" alt="SG3">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG3</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG4.jpg" class="d-block w-100" alt="SG4">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG4</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG5.jpg" class="d-block w-100" alt="SG5">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG5</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG6.jpg" class="d-block w-100" alt="SG6">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG6</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG7.jpg" class="d-block w-100" alt="SG7">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG7</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG8.jpg" class="d-block w-100" alt="SG8">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG8</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG9.jpg" class="d-block w-100" alt="SG9">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG9</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG10.jpg" class="d-block w-100" alt="SG10">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG10</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG1_Bunch.jpg" class="d-block w-100" alt="SG1 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of SG1</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG2_Bunch.jpg" class="d-block w-100" alt="SG2 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of SG2</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG3_Bunch.jpg" class="d-block w-100" alt="SG3 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of SG3</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG4_Bunch.jpg" class="d-block w-100" alt="SG4 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of SG4</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG5_Bunch.jpg" class="d-block w-100" alt="SG5 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of SG5</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG6_Bunch.jpg" class="d-block w-100" alt="SG6 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of SG6</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG7_Bunch.jpg" class="d-block w-100" alt="SG7 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of SG7</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG8_Bunch.jpg" class="d-block w-100" alt="SG8 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of SG8</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG9_Bunch.jpg" class="d-block w-100" alt="SG9 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of SG9</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SG10_Bunch.jpg" class="d-block w-100" alt="SG10 Cluster">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Cluster of SG10</p>
+                            </div>
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#switchgrass" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#switchgrass" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Photos of Smooth Brome -->
+                <div class="col-md-4">
+                    <h3 class="text-center mb-3">Smooth Brome</h3>
+                    <div id="smoothbrome" class="carousel slide photos">   
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="static/field/SB1.jpg" class="d-block w-100" alt="SB1">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB1</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SB2.jpg" class="d-block w-100" alt="SB2">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB2</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SB3.jpg" class="d-block w-100" alt="SB3">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB3</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SB4.jpg" class="d-block w-100" alt="SB4">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB4</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SB5.jpg" class="d-block w-100" alt="SB5">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB5</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SB6.jpg" class="d-block w-100" alt="SB6">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB6</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SB7.jpg" class="d-block w-100" alt="SB7">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB7</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/field/SB8.jpg" class="d-block w-100" alt="SB8">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB8</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#smoothbrome" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#smoothbrome" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                    </div>  
+                    <!-- Whitespace -->
+                    <br>
+                    <br>
+                </div> 
+
+                <!-- Soil Sample Photos -->
+                <div class="col-md-4">
+                    <h3 class="text-center mb-3">Soil Photos</h3>
+                    <div id="soil" class="carousel slide photos">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="static/soil/BB8_Soil_Mixture.jpeg" class="d-block w-100" alt="BB8 Soil Mixture">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB8 Soil Mixture</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/SG1_Soil_Mixture.jpeg" class="d-block w-100" alt="SG1 Soil Mixture">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG1 Soil Mixture</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/SG1_Soil_Sample.jpeg" class="d-block w-100" alt="SG1 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG1 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/SG2_Soil_Sample.jpeg" class="d-block w-100" alt="SG2 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG2 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/SG3_Soil_Sample.jpeg" class="d-block w-100" alt="SG3 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG3 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/SG4_Soil_Sample.jpeg" class="d-block w-100" alt="SG4 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG4 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/SG5_Soil_Sample.jpeg" class="d-block w-100" alt="SG5 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG5 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/SG6_Soil_Sample.jpeg" class="d-block w-100" alt="SG6 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG6 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/SG7_Soil_Sample.jpeg" class="d-block w-100" alt="SG7 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG7 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/SG8_Soil_Sample.jpeg" class="d-block w-100" alt="SG8 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG8 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/SG9_Soil_Sample.jpeg" class="d-block w-100" alt="SG9 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG9 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/SG10_Soil_Sample.jpeg" class="d-block w-100" alt="SG10 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG10 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/BB1_Soil_Sample.jpeg" class="d-block w-100" alt="BB1 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB1 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/BB2_Soil_Sample.jpeg" class="d-block w-100" alt="BB2 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB2 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/BB3_Soil_Sample.jpeg" class="d-block w-100" alt="BB3 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB3 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/BB4_Soil_Sample.jpeg" class="d-block w-100" alt="BB4 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB4 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/BB5_Soil_Sample.jpeg" class="d-block w-100" alt="BB5 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB5 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/BB6_Soil_Sample.jpeg" class="d-block w-100" alt="BB6 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB6 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/BB7_Soil_Sample.jpeg" class="d-block w-100" alt="BB7 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB7 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/BB8_Soil_Sample.jpeg" class="d-block w-100" alt="BB8 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB8 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/BB9_Soil_Sample.jpeg" class="d-block w-100" alt="BB9 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB9 Soil Sample</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/soil/BB10_Soil_Sample.jpeg" class="d-block w-100" alt="BB10 Soil Sample">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB10 Soil Sample</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#soil" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#soil" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lakeshore Nature Preserve Photos -->
+                <div class="col-md-4">
+                    <h3 class="text-center mb-3">Prairie Photos</h3>
+                    <div id="prairie" class="carousel slide photos">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="static/field/Prairie2.jpeg" class="d-block w-100" alt="Collecting Big Bluestem Sample">
+                                <div class="carousel-caption d-none d-md-block">
+                                <p>Collecting Big Bluestem Sample</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/field/Prairie3.jpeg" class="d-block w-100" alt="Extracting Big Bluestem Sample">
+                                <div class="carousel-caption d-none d-md-block">
+                                <p>Extracting Big Bluestem Sample</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/field/Prairie4.jpeg" class="d-block w-100" alt="Collecting Big Bluestem Sample">
+                                <div class="carousel-caption d-none d-md-block">
+                                <p>Collecting Big Bluestem Sample</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/field/Prairie5.jpeg" class="d-block w-100" alt="Collecting Big Bluestem Sample">
+                                <div class="carousel-caption d-none d-md-block">
+                                <p>Collecting Big Bluestem Sample</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/field/Prairie6.jpeg" class="d-block w-100" alt="Switchgrass Microbiome">
+                                <div class="carousel-caption d-none d-md-block">
+                                <p>Switchgrass Microbiome</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/field/Prairie7.jpeg" class="d-block w-100" alt="Collecting Switchgrass Sample">
+                                <div class="carousel-caption d-none d-md-block">
+                                <p>Collecting Switchgrass Sample</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/field/Prairie8.jpeg" class="d-block w-100" alt="Switchgrass Microbiome">
+                                <div class="carousel-caption d-none d-md-block">
+                                <p>Switchgrass Microbiome</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/field/spider1.jpg" class="d-block w-100" alt="spider in prairie 1">
+                                <div class="carousel-caption d-none d-md-block">
+                                <p>White Spider 1</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/field/spider2.jpg" class="d-block w-100" alt="spider in prairie 2">
+                                <div class="carousel-caption d-none d-md-block">
+                                <p>White Spider 2</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/field/Prairie1.jpeg" class="d-block w-100" alt="Biocore Prairie">
+                                <div class="carousel-caption d-none d-md-block">
+                                <p>Biocore Prairie</p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#prairie" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#prairie" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bacteria Photos -->
+                <div class="col-md-4">
+                    <h3 class="text-center mb-3">Bacteria Photos</h3>
+                    <div id="bacteria" class="carousel slide photos">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="static/bacteria/SB1_Aerobic_LBV-A.jpg" class="d-block w-100" alt="SB1 Aerobic LBV-A">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB1 Aerobic LBV-A Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/BB2_Aerobic_LBV-A.jpg" class="d-block w-100" alt="BB2 Aerobic LBV-A">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB2 Aerobic LBV-A Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/BB2_Aerobic_R2B-A.jpg" class="d-block w-100" alt="BB2 Aerobic R2B-A">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB2 Aerobic R2B-A Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/BB2_Aerobic_R2B-B.jpg" class="d-block w-100" alt="BB2 Aerobic R2B-B">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB2 Aerobic R2B-B Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/SG10_Aerobic_LBV-A.jpg" class="d-block w-100" alt="SG10 Aerobic LBV-A">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG10 Aerobic LBV-A Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/SG10_Aerobic_LBV-B.jpg" class="d-block w-100" alt="SG10 Aerobic LBV-B">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG10 Aerobic LBV-B Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/SG10_Aerobic_R2B-A.jpg" class="d-block w-100" alt="SG10 Aerobic R2B-A">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG10 Aerobic R2B-A Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/SG10_Aerobic_R2B-B.jpg" class="d-block w-100" alt="SG10 Aerobic R2B-B">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG10 Aerobic R2B-B Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/SG10_Anaerobic_LBV-A.jpg" class="d-block w-100" alt="SG10 Anaerobic LBV-A">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG10 Anaerobic LBV-A Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/SG10_Anaerobic_LBV-B.jpg" class="d-block w-100" alt="BB2 Aerobic LBV-B">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG10 Anaerobic LBV-B Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/SB1_Aerobic_LBV-B.jpg" class="d-block w-100" alt="SB1 Aerobic LBV-B">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB1 Aerobic LBV-B Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/SB1_Aerobic_R2B-A.jpg" class="d-block w-100" alt="SB1 Aerobic R2B-A">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB1 Aerobic R2B-A Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/SB1_Aerobic_R2B-B.jpg" class="d-block w-100" alt="SB1 Aerobic R2B-B">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB1 Aerobic R2B-B Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/BB2_Early_Growth.jpeg" class="d-block w-100" alt="BB2 First Growth">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB2 First Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/SB1_Early_Growth.jpeg" class="d-block w-100" alt="SB1 First Growth 1">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB1 First Growth 1</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/SB1_Early_Growth2.jpeg" class="d-block w-100" alt="SB1 First Growth 2">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB1 First Growth 2</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/SG10_Early_Growth.jpeg" class="d-block w-100" alt="SG10 First Growth">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG10 First Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/BB2_Aerobic_NoGrowth.jpg" class="d-block w-100" alt="BB2 Aerobic No Growth">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB2 Aerobic No Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/BB2:SG10_Anaerobic_NoGrowth.jpg" class="d-block w-100" alt="BB2:SG10 Anaerobic No Growth">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB2/SG10 Anaerobic No Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/BB2_Aerobic_Growth.jpg" class="d-block w-100" alt="BB2 Aerobic Growth">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>BB2 Aerobic Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/SG10_Aerobic_Growth.jpg" class="d-block w-100" alt="SG10 Aerobic Growth">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SG10 Aerobic Growth</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/bacteria/SB1_Aerobic_Growth.jpg" class="d-block w-100" alt="SB1 Aerobic Growth">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB1 Aerobic Growth</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#bacteria" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#bacteria" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Whitespace -->
+            <br>
+            <br>
+
+            <!-- Last two carousels -->
+            <div class="row justify-content-center">
+                
+                <!-- Lab Photos -->
+                <div class="col-md-4">
+                    <h3 class="text-center mb-3">Lab Photos</h3>
+                    <div id="lab" class="carousel slide photos">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="static/lab/Zymo_Alaynah1.jpeg" class="d-block w-100" alt="DNA Isolation Alaynah 1">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Alaynah DNA Isolation 1</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/lab/Zymo_Alaynah2.jpeg" class="d-block w-100" alt="DNA Isolation Alaynah 2">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Alaynah DNA Isolation 2</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/lab/Zymo_Alaynah3.jpeg" class="d-block w-100" alt="DNA Isolation Alaynah 3">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Alaynah DNA Isolation 3</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/lab/Zymo_Alex1.jpeg" class="d-block w-100" alt="DNA Isolation Alex 1">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Alex DNA Isolation 1</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/lab/Zymo_Alex2.jpeg" class="d-block w-100" alt="DNA Isolation Alex 2">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Alex DNA Isolation 2</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/lab/Zymo_Alex3.jpeg" class="d-block w-100" alt="DNA Isolation Alex 3">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Alex DNA Isolation 3</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/lab/Zymo_Alex4.jpeg" class="d-block w-100" alt="DNA Isolation Alex 4">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Alex DNA Isolation 4</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#lab" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#lab" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Notes Photos -->
+                <div class="col-md-4">
+                    <h3 class="text-center mb-3">Research Notes Photos</h3>
+                    <div id="notes" class="carousel slide photos">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="static/notes/AlexNotes1.jpg" class="d-block w-100" alt="Alex's Notebook 1">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Alex's Notebook</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/notes/AlexNotes2.jpg" class="d-block w-100" alt="Alex's Notebook 2">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Alex's Notebook</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/notes/AlexNotes3.jpg" class="d-block w-100" alt="Alex's Notebook 3">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Alex's Notebook</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/notes/AlexNotes4.jpg" class="d-block w-100" alt="Alex's Notebook 4">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Alex's Notebook</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/notes/AlexNotes5.jpg" class="d-block w-100" alt="Alex's Notebook 5">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Alex's Notebook</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/notes/AlexNotes6.jpg" class="d-block w-100" alt="Alex's DNA Isolation Results">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Alex's DNA Isolation Results</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/notes/AlexNotes7.jpg" class="d-block w-100" alt="Alex's Bacteria Observations SG:BB">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Alex's SG/BB Bacteria Observations</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/notes/AlexNotes8.jpg" class="d-block w-100" alt="Alex's Bacteria Observations SB">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Alex's SB Bacteria Observations</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/notes/AlexNotes9.jpg" class="d-block w-100" alt="Media Recipes">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Media Recipes</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/notes/AlexNotes10.jpg" class="d-block w-100" alt="SB Field Observations">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>SB Field Observations</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/notes/AlexNotes11.jpg" class="d-block w-100" alt="Procedure Drawing from Christine">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Procedure Drawing from Christine</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/notes/AlexNotes12.jpg" class="d-block w-100" alt="Serial Dilution Handout">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Serial Dilution Handout</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#notes" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#notes" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+       
+        <!-- Special Thanks -->
+        <footer class="mt-auto">
+            <div>
+                <!-- Whitespace -->
+                <br>
+                <br>
+                <br>
+
+                <!-- Message -->
+                <p id="thanks" class="text-center mb-3"> 
+                    Special thanks to Christine Hustmyer, Jonathan Buscher, Rachel Mooney, Seth McGee, Bryn Scriver,
+                    the Landick Lab, & the family of Dr. Henry Hart and Dr. Robert Goodman. Our time this summer was invaluable 
+                    and we wish all the best for anyone else who is fortunate enough to have an experience such as this!
+                    - Alaynah Smith & Alex Taylor
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
